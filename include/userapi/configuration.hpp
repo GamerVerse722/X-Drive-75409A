@@ -3,10 +3,13 @@
 #include "gamers-forge/bmapper.hpp"
 
 #include "pros/misc.hpp"
+#include "userapi/driver/chassis.hpp"
 
 
 namespace devices {
     extern pros::Controller master;
+
+    extern xDrive::Chassis chassis;
 }
 
 namespace configuration::drive {

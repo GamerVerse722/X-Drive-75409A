@@ -1,6 +1,7 @@
 #include "userapi/configuration.hpp"
 
 #include "automonous.hpp"
+#include "driver/chassis.hpp"
 #include "pros/adi.hpp"
 #include "pros/misc.h"
 
@@ -12,6 +13,15 @@
 
 namespace devices {
     pros::Controller master(pros::E_CONTROLLER_MASTER);
+
+    xDrive::Chassis chassis(
+        20,
+        11,
+        19,
+        12,
+        18,
+        333
+    );
 }
 
 namespace configuration::drive {
