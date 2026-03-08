@@ -106,13 +106,6 @@ void opcontrol() {
 	});
 
 	while (true) {
-		// chassis.opcontrol_tank();
-		// if (keybindActions::drive::is_arcade() == true) {
-		// 	chassis.opcontrol_arcade_standard(ez::SPLIT);
-		// } else {
-		// 	chassis.opcontrol_tank();
-		// }
-
         double forward = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
         double strafe  = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_X);
         double rotate  = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
